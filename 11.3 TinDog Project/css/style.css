@@ -50,22 +50,6 @@ border-radius: 0.75rem;
 
 .dog-profile {
   border-radius: 50%;
-  margin-top: 5px;
-  margin-bottom: 2px;
-}
-
-.img-items {
-  padding: 0 12px;
-}
-
-.edits {
-  padding: 0;
-  margin: 0;
-}
-
-.align-items-center > .g-5 > .py-5 > .edits {
-  padding: 0;
-  margin: 0;
 }
 
 .text-body-secondary {

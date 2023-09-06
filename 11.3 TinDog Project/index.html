@@ -14,7 +14,8 @@
   <!-- Title -->
   <section id="title" class="gradient-background">
 
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5 edits">
+    <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
+      <!--py-5 means padding on the y axis of 5, therefore you can change it to pt-5 for only padding on the bottom-->
       <div id="img-holder" class="col-10 col-sm-8 col-lg-6">
         <img src="./images/iphone.png" class="d-block mx-lg-auto img-fluid .iphone" alt="Bootstrap Themes"  height="200px" loading="lazy">
       </div>
@@ -101,7 +102,7 @@
     <div class="p-5 text-center bg-body-tertiary">
       <div class="container py-5">
         <h2 class="text-body-emphasis">"I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof."</h2>
-        <img src="./images/dog-img.jpg" class="dog-profile" height="100px" />
+        <img src="./images/dog-img.jpg" class="dog-profile mt-5 mb-2" height="100px" />
         <p class="col-lg-8 mx-auto lead">
           Pebbles, New York
         </p>
@@ -142,7 +143,7 @@
                   <li>10 Messages Per Day</li>
                   <li>Unlimited App Usage</li>
                 </ul>
-                <button type="button" class="w-100 btn btn-lg btn-outline-primary btn-outline-dark">Sign up for free</button>
+                <button type="button" class="w-100 btn btn-lg btn-outline-dark">Sign up for free</button>
               </div>
             </div>
           </div>
@@ -158,13 +159,13 @@
                   <li>Unlimited Messages</li>
                   <li>Unlimited App Usage</li>
                 </ul>
-                <button type="button" class="w-100 btn btn-lg btn-primary btn-dark">Get started</button>
+                <button type="button" class="w-100 btn btn-lg btn-dark">Get started</button>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-primary border-dark">
-              <div class="card-header py-3 text-bg-primary border-primary border-dark bg-dark">
+            <div class="card mb-4 rounded-3 shadow-sm border-dark">
+              <div class="card-header py-3 border-dark text-bg-dark">
                 <h4 class="my-0 fw-normal">Mastiff</h4>
               </div>
               <div class="card-body">
@@ -174,7 +175,7 @@
                   <li>Unlimited Matches & Messages</li>
                   <li>Unlimited App Usage</li>
                 </ul>
-                <button type="button" class="w-100 btn btn-lg btn-primary btn-dark">Contact us</button>
+                <button type="button" class="w-100 btn btn-lg btn-dark">Contact us</button>
               </div>
             </div>
           </div>
@@ -186,11 +187,8 @@
   <!-- Footer -->
   <section id="footer" class="gradient-background">
 
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
       <div class="col mb-3">
-        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        </a>
         <p class="text-body-secondary">© Tindog</p>
       </div>
   
