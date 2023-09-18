@@ -99,3 +99,38 @@ function fizzBuzz() {
     count++;
     console.log(output);
     }
+
+
+var output = [];
+var count = 1;
+
+function fizzBuzz() {
+    while (count <= 100) {
+        if ((count%3) == 0 && (count % 5) != 0) {
+            output.push("Fizz");
+        } else if ((count%5) == 0 && (count%3) != 0) {
+            output.push("Buzz");
+        } else if ((count%3) == 0 && (count%5) == 0 && count != 0) {
+            output.push("FizzBuzz")
+        } else {
+            output.push(count)
+        }
+    count++;
+    console.log(output);
+    }
+}
+
+// While loops:
+
+var count = 99;
+
+while (count >= 0) {
+    if (count == 0) {
+        console.log("No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.");
+    } else if (count == 1) {
+        console.log("1 bottle of beer on the wall, 1 bottle of beer.\nTake one down and pass it around, no more bottles of beer on the wall.")
+    } else {
+    console.log(count + " bottles of beer on the wall, " + count + " bottles of beer.\nTake one down and pass it around, " + (count-1) + " bottles of beer on the wall");
+    }
+    count--;
+}
