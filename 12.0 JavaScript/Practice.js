@@ -134,3 +134,24 @@ while (count >= 0) {
     }
     count--;
 }
+
+// Fibonacci Generator:
+
+function fibonacciGenerator (n) {
+    //Do NOT change any of the code above 👆
+        //Write your code here:
+        var output = [];
+        for (var i = 0; i < n; i++) {
+            if (i == 0 || i == 1) {
+                output[i] = i;
+            } else {
+                var add = output[i - 2] + output[i - 1];
+                output[i] = add;
+            }
+        }
+        //Return an array of fibonacci numbers starting from 0.
+        return  output;
+    //Do NOT change any of the code below 👇
+    }
+    
+    
