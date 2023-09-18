@@ -44,6 +44,8 @@ if (loveScore === 100) {
     alert("Love score: " + loveScore + "%" + " you go together like oil and water");
 }
 
+// Calculating the BMI of someone:
+
 function bmiCalculator (weight, height) {
     var BMI = (Math.round((weight / (Math.pow(height, 2))) * 10)) / 10;
     if (BMI < 18.5) {
@@ -57,6 +59,8 @@ function bmiCalculator (weight, height) {
 }
 
 console.log(bmiCalculator(100, 1.8));
+
+// Checking for leap years:
 
 function isLeap(year) {
     var answer = "Not leap year."
@@ -74,6 +78,7 @@ function isLeap(year) {
 
 console.log(isLeap(40));
 
+// Who's paying the bill:
 
 function whosPaying(names) {
     var rnd = Math.round((Math.random()*(names.length - 1)));
@@ -81,7 +86,7 @@ function whosPaying(names) {
     return out;
 }
 
-
+// FizzBuzz Game thingy:
 
 var output = [];
 var count = 1;
@@ -96,10 +101,11 @@ function fizzBuzz() {
         } else {
             output.push(count)
         }
+        console.log(output);
     count++;
-    console.log(output);
     }
 
+    // FizzBuzz Game thingy:
 
 var output = [];
 var count = 1;
