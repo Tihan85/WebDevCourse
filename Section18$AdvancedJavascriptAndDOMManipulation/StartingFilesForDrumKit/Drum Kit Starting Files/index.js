@@ -11,14 +11,11 @@ buttons.forEach(function(button) {
 
 function handleClick(clicked, button, event) {
     var letter = null;
-
     if (clicked === true) {
         letter = button.classList[0];
     } else if (event) {
         letter = event.key;
     }
-    
-  
         switch(letter) {
             case 'w': 
                 var tom1 = new Audio("./sounds/tom-1.mp3");
