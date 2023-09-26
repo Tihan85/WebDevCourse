@@ -50,12 +50,12 @@ function handleClick(clicked, button, event) {
                 break;
         }
     
-        // if (clicked === true) {
+        if (clicked === true) {
             button.style.color = 'white';
             setTimeout(function() {
                 button.style.color = '#DA0463';
             }, 500);
-        // }
+        }
     
 
 /*     var audio = new Audio("./sounds/tom-1.mp3");
