@@ -2,10 +2,12 @@ var buttons = document.querySelectorAll(".drum");
 buttons.forEach(function(button) {
     button.addEventListener('click', function() {
         handleClick(true, button);
+        buttonAnimation(button.classList[0]);
     });
 
     document.addEventListener('keydown', function(event) {
         handleClick(false, null, event);
+        buttonAnimation(event.key);
     });
 });
 
@@ -51,14 +53,23 @@ function handleClick(clicked, button, event) {
             button.style.color = 'white';
             setTimeout(function() {
                 button.style.color = '#DA0463';
-            }, 500);
+            }, 100);
+        } else {
+            document.querySelector("." + event.key).style.color = 'white';
+            setTimeout(function() {
+                document.querySelector("." + event.key).style.color = '#DA0463';
+            }, 100);
         }
-    
-
-/*     var audio = new Audio("./sounds/tom-1.mp3");
-    audio.play(); */
-
 }
+
+function buttonAnimation(currentKey) {
+    var activeButton = document.querySelector("." + currentKey);
+    activeButton.classList.toggle("pressed");
+    setTimeout(function() {
+        activeButton.classList.toggle("pressed");
+    }, 100);
+}
+
 /* 
 for (var i = 0; i < document.querySelectorAll(.drum).length; i++) {
     document.querySelectorAll("button")[i].addEventListener("click", handleClick);
