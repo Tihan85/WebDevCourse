@@ -134,3 +134,16 @@ $("button:eq(4)").on("click", function (){
         $("h1").append("<button>Appened Button</button>"); // prepends the html to the h1
     }
 });
+
+$("button:eq(6)").html("Hide the h1")
+$("button:eq(6)").on("click", function () {
+    // $("h1").toggle();
+    // $("h1").fadeOut();
+    // $("h1").fadeIn();
+    // $("h1").fadeToggle();
+    // $("h1").slideUp();
+    // $("h1").slideDown();
+    // $("h1").slideToggle();
+    // $("h1").animate({opacity: 0.5}); // only add css rules that have numerical values
+    $("h1").slideUp().slideDown().animate({opacity: 0.5}); //Doing more than one animation
+});
