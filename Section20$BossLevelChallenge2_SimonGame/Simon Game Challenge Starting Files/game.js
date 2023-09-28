@@ -2,6 +2,8 @@
 var buttonColors = ["red", "blue", "green", "yellow"];
 var gamePattern = [];
 var userClickPattern = [];
+let keyPressed = false;
+let level = 0;
 
 /* Random number generating (Step2) */
 
@@ -11,6 +13,8 @@ function nextSequence() {
    var randomChosenColor = buttonColors[randomNumber];
    gamePattern.push(randomChosenColor);
    animations(randomChosenColor);
+   level++;
+   $("#level-title").html("Level " + level);
  }
 
 /* Animations for when buttons are clicked */
@@ -28,3 +32,16 @@ $(".btn").click(function () {
    animations(userChosenColor);
 });
 
+/* Step 6 Starting the game: */
+$(document).keypress(function(event) {
+   if (!keyPressed) {
+      nextSequence();
+      keyPressed = true;
+      // $("#level-title").html("Level " + level);
+   }
+});
+
+/* Checking the answers */ 
+function checkAnswer() {
+   currentLevel = level;
+}
