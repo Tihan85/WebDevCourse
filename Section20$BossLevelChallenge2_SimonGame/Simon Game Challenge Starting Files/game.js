@@ -57,10 +57,6 @@ function checkAnswer(currentLevel) {
       setTimeout(() => {
          $("body").removeClass("game-over");
       }, 200);
-      document.body.style.backgroundImage = "url('./sounds/GeorgeIdiot.png')"
-      setTimeout(() => {
-         document.body.style.backgroundImage = "none";
-      }, 2000);
       restart();
    }
    if (cont){
